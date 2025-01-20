@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+variant.txt
+.copr/Makefile
+copr_gui/generic/pyside6/uimonitor.py
+copr_gui/generic/pyside6/uisettings.py
+copr_gui/generic/pyside6/uistatusbar.py
+copr_pyside6.egg-info/PKG-INFO
+copr_pyside6.egg-info/SOURCES.txt
+copr_pyside6.egg-info/dependency_links.txt
+copr_pyside6.egg-info/requires.txt
+copr_pyside6.egg-info/top_level.txt

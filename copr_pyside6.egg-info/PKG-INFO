@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: copr_pyside6
+Version: 0.0.6
+Summary: Copr package build gui tools
+Home-page: https://pagure.io/matrix/python-copr-wx
+License: GPLv3
+Requires-Dist: copr_gui
+Requires-Dist: pyside6
