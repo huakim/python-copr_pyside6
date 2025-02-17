@@ -1,18 +1,10 @@
-#!/usr/bin/python3
-'''
-
-
-i have the following code. how can i add feauture to copy element with ctrl+c?
-```
-#'''
-#import wx
-#import wx.grid as gridlib
 from .uistatusbar import WindowFrame
 import datetime
 from copr_gui.static.spec_types import getName, getId, getType
 
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QMenu
+
 
 class Index(list):
     def __init__(self, row, col):

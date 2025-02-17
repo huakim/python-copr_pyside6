@@ -1,15 +1,21 @@
-#!/usr/bin/python3
-#uistatusbar.py
-
-'''
-
-can i convert this to pyside6 equivalent?
-```
-'''
-
-
 from PySide6 import QtWidgets, QtGui
 from PySide6.QtWidgets import QDialog
+from PySide6.QtWidgets import QApplication, QMessageBox
+
+def show_error(e: Exception):
+    # Create an error message box
+    error_message_box = QMessageBox()
+    error_message_box.setIcon(QMessageBox.Critical)
+
+    # Set the title to the type of the exception
+    error_message_box.setWindowTitle(type(e).__name__)
+
+    # Set the text to the error message
+    error_message_box.setText(str(e))
+    error_message_box.setStandardButtons(QMessageBox.Ok)
+
+    # Show the message box
+    error_message_box.exec()
 
 class WindowFrame(QDialog):
     def __init__(self, *args, **kwargs):
