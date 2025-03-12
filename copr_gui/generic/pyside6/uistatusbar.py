@@ -1,15 +1,14 @@
-#!/usr/bin/python3
-#uistatusbar.py
-
-'''
-
-can i convert this to pyside6 equivalent?
-```
-'''
-
-
 from PySide6 import QtWidgets, QtGui
 from PySide6.QtWidgets import QDialog
+from PySide6.QtWidgets import QApplication, QMessageBox
+
+def error(label, window, parent=None):
+    msg_box = QtWidgets.QMessageBox(parent)
+    msg_box.setWindowTitle(window)
+    msg_box.setText(label)
+    msg_box.setIcon(QtWidgets.QMessageBox.Icon.Critical)
+    msg_box.addButton(QtWidgets.QMessageBox.StandardButton.Ok)
+    msg_box.exec()
 
 class WindowFrame(QDialog):
     def __init__(self, *args, **kwargs):
@@ -95,14 +94,6 @@ def CreateApp():
 
 def InitApp(app):
     return app.exec()
-
-def error(label, window, parent=None):
-    msg_box = QtWidgets.QMessageBox(parent)
-    msg_box.setWindowTitle(window)
-    msg_box.setText(label)
-    msg_box.setIcon(QtWidgets.QMessageBox.Icon.Critical)
-    msg_box.addButton(QtWidgets.QMessageBox.StandardButton.Ok)
-    msg_box.exec()
 
 def browser(url):
     QtGui.QDesktopServices.openUrl(QtCore.QUrl(url))

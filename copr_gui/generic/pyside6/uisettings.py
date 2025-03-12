@@ -1,12 +1,3 @@
-#!/usr/bin/python3
-#from bidict import bidict
-#from collections import OrderedDict
-#from collections.abc import Iterable
-
-#from spec_types import NamedDict, BooleanDict, getName, getId, getFunc
-#from spec_types import date_wxtoblt, time_wxtoblt, date_blttowx, time_blttowx
-
-
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QLineEdit, QPushButton, QHBoxLayout, QApplication
 
 
